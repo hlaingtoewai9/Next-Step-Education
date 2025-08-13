@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Step Education</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons CDN for icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #1a202c;
+            background-color: #f7fafc;
+        }
+        .text-blue-600 {
+            color: #2563eb;
+        }
+        .bg-blue-600 {
+            background-color: #2563eb;
+        }
+        .hover\:bg-blue-700:hover {
+            background-color: #1d4ed8;
+        }
+        .header-bg {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="header-bg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- I have increased the height of the logo from h-10 to h-16 -->
+                <img src="logo_test.jpg" alt="Next Step Education Logo" class="h-16 w-auto">
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="#hero" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Our Services</a>
+                <a href="#universities" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Universities</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="#hero" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition-colors">Home</a>
+            <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition-colors">Our Services</a>
+            <a href="#universities" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition-colors">Universities</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition-colors">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-blue-600 text-white min-h-screen flex items-center justify-center p-6 md:p-12">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                    Your Journey to a Brighter Future Starts Here
+                </h1>
+                <p class="mt-4 md:mt-6 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                    Next Step Education is your trusted partner for university applications and guidance. We're here to help you achieve your academic goals.
+                </p>
+                <div class="mt-8 md:mt-10">
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-colors shadow-xl transform hover:scale-105">
+                        Book a Free Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">
+                    Our Services
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive support to make your application process smooth and successful.
+                </p>
+                <!-- Changed to a 3-column grid for better layout with 6 services -->
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card: University Selection -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <i class="ph-graduation-cap text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">University Selection</h3>
+                        <p class="text-gray-600">
+                            We help you find the perfect university that aligns with your academic goals and career aspirations.
+                        </p>
+                    </div>
+
+                    <!-- Service Card: Application Assistance -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <i class="ph-file-text text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Application Assistance</h3>
+                        <p class="text-gray-600">
+                            Our experts guide you through every step of the application process, from essays to document submission.
+                        </p>
+                    </div>
+
+                    <!-- Service Card: Visa Guidance -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <!-- Updated the icon for Visa Guidance to a solid SVG for reliability -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="text-blue-600">
+                                <path d="M18.5 2h-14a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM9 13.5H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Visa Guidance</h3>
+                        <p class="text-gray-600">
+                            We provide comprehensive support and guidance to help you navigate the visa application process.
+                        </p>
+                    </div>
+
+                    <!-- Service Card: Scholarship & Financial Aid -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <i class="ph-currency-circle-dollar text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Scholarship & Financial Aid</h3>
+                        <p class="text-gray-600">
+                            We assist you in identifying and applying for scholarships and other financial aid to support your education.
+                        </p>
+                    </div>
+
+                    <!-- Service Card: Pre-Departure Support (New) -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <i class="ph-airplane-takeoff text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pre-Departure Support</h3>
+                        <p class="text-gray-600">
+                            We ensure you are fully prepared for your journey with checklists, travel arrangements, and essential advice.
+                        </p>
+                    </div>
+
+                    <!-- Service Card: Post-Arrival Support (New) -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-6">
+                            <i class="ph-house text-blue-600 text-5xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Post-Arrival Support</h3>
+                        <p class="text-gray-600">
+                            Our support continues after you arrive, helping you with accommodation, registration, and settling in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Universities Section -->
+        <section id="universities" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">
+                    Our Partner Universities
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    We proudly partner with leading universities to offer you the best educational opportunities.
+                </p>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                    <!-- University 1: INTI -->
+                    <div class="p-4 flex flex-col items-center justify-center space-y-4">
+                        <img src="INTI.webp" alt="INTI University Logo" class="h-20 w-auto rounded-lg shadow-md">
+                        <span class="text-lg font-medium text-gray-700">INTI University</span>
+                    </div>
+                    <!-- University 2: Kings University -->
+                    <div class="p-4 flex flex-col items-center justify-center space-y-4">
+                        <img src="Kings.webp" alt="Kings University Logo" class="h-20 w-auto rounded-lg shadow-md">
+                        <span class="text-lg font-medium text-gray-700">Kings University</span>
+                    </div>
+                    <!-- University 3: The One Academy -->
+                    <div class="p-4 flex flex-col items-center justify-center space-y-4">
+                        <img src="The_One_Academy-pxjc430vebcaxbi4mas1fvrgcg1pxcgarf1titv21c.webp" alt="The One Academy Logo" class="h-20 w-auto rounded-lg shadow-md">
+                        <span class="text-lg font-medium text-gray-700">The One Academy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-800 text-white py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+                        Get In Touch
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        Ready to take the next step? Fill out the form below and we'll get back to you shortly.
+                    </p>
+                </div>
+                <!-- Contact info and form container -->
+                <div class="mt-12 flex flex-col md:flex-row gap-12 max-w-4xl mx-auto">
+                    <!-- Contact Details -->
+                    <div class="md:w-1/2 flex flex-col space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <i class="ph-map-pin text-blue-600 text-3xl"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Our Office</h3>
+                                <p class="text-gray-300 mt-1">123 Education Street, Suite 400<br>University City, 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="ph-phone-call text-blue-600 text-3xl"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Phone Number</h3>
+                                <p class="text-gray-300 mt-1">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="ph-envelope-simple text-blue-600 text-3xl"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Email Address</h3>
+                                <p class="text-gray-300 mt-1">info@nextstepedu.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <form class="md:w-1/2 space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-white" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-white" placeholder="john.doe@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-white" placeholder="I'm interested in applying to..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors transform hover:scale-105 shadow-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-400 py-8">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2024 Next Step Education. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript for smooth scrolling and mobile menu -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
